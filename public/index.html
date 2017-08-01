@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My App: Everybody</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <div class="logo"><img src="images/logo.svg" alt="logo"></div>
+      <nav id="menu">
+        <ul>
+          <li><a href="#">Acerca de la aplicacion</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <h2>Bienvenidos al chat :v <h2>
+    </div>
+    <article >
+      <section class="chat">
+        <div class="form-group">
+          <label for="nombre" id="lblNombre" >Escriba su Usuario: </label>
+          <input type="text" id="nombre" placeholder="Escriba su Usuario..." estado="activo" class="form-control">
+        </div>
+        <div id="mensajeria"></div>
+        <div class="form-group">
+          <input type="text" id="texto" placeholder="Escriba su mensaje" class="form-control">
+          <div class="btnEnviar" id="btnEnviar">
+            <img src="images/icon-send.svg" alt="send" >
+          </div>
+        </div>
+      </section>
+    </article>
+    <footer>
+      <p>Copyright 2017 Todos los derechos reservados | <a href="https://www.facebook.com/YonattanCesar" target="_blank">@Yonattan</a></p>
+    </footer>
+  </div>
+  <script src="js/qunit.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
